@@ -3,7 +3,7 @@ import { FiGithub, FiExternalLink } from 'react-icons/fi'
 
 const projects = [
   {
-    title: 'Learning Platform',
+    title: 'Code Learning Platform',
     description: 'Smth smth smth',
     tags: ['React', 'Tailwind CSS', 'Node.js', 'MySQL'],
     github: '#',
@@ -13,7 +13,7 @@ const projects = [
   {
     title: 'Guitar Web App',
     description: 'An all-in-one web app for guitarists.',
-    tags: ['Next.js', 'Stripe', 'Tailwind CSS'],
+    tags: ['React.js', 'Tailwind CSS'],
     github: '#',
     live: '#',
     image: '/images/project2.jpg',

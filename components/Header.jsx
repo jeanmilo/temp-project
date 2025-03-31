@@ -34,7 +34,7 @@ export default function Header({ darkMode, toggleTheme, textEnter, textLeave }) 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative flex justify-between items-center">
           <div className="flex-shrink-0 absolute left-0">
-            <Link href="#home" className="text-accent font-bold text-lg text-decoration-line: none">
+            <Link href="#home" className="text-accent font-bold text-lg sm:text-md text-decoration-line: none">
               <span className="hidden sm:inline">Claudia Yamamoto</span>
               <span className="sm:hidden">CY</span>
             </Link>
@@ -46,7 +46,7 @@ export default function Header({ darkMode, toggleTheme, textEnter, textLeave }) 
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-text hover:text-accent transition-colors"
+                    className="text-xs sm:text-sm md:text-md hover:text-saccent"
                     onMouseEnter={textEnter} onMouseLeave={textLeave}
                   >
                     {item.name}

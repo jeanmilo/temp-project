@@ -47,7 +47,7 @@ export default function Home() {
       x: mousePosition.x - 15,
       y: mousePosition.y - 15,
       backgroundColor: 'var(--cursor-hover)',
-      mixBlendMode: "difference",
+      mixBlendMode: darkMode ? "screen" : "multiply",
       transition: {
         type: "spring",
         stiffness: 200,
@@ -112,7 +112,10 @@ export default function Home() {
           textLeave={textLeave}
         />
         <Projects />
-        <About />
+        <About
+          textEnter={textEnter} 
+          textLeave={textLeave} 
+        />
         <Contact 
           textEnter={textEnter} 
           textLeave={textLeave}

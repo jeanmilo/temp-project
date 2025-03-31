@@ -13,7 +13,7 @@
   --primary-light: #f8f9fa;
   --secondary-light: #F9C74F;
   --accent-light: #fb6107;
-  --accent-s-light: #c91411;
+  --accent-s-light: #cc3734;
   --text-light: #7fb800;
   --text-s-light: #0d2c54; 
 
@@ -97,7 +97,8 @@ body {
   --text-secondary: var(--text-s-dark);
 
   --cursor-color: rgba(253, 151, 31, 0.6);
-  --cursor-hover: #fff;
+  --cursor-hover: rgba(247, 40, 112, .6);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .light {
@@ -111,7 +112,8 @@ body {
   --text-secondary: var(--text-s-light);
 
   --cursor-color: rgba(131, 195, 3, 0.6);
-  --cursor-hover: #fff;
+  --cursor-hover: rgba(255, 216, 123, 1);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .titlee{
@@ -140,8 +142,6 @@ a {
 
 button {
   color: var(--);
-  border: none;
-  padding: 10px 20px;
   border-radius: 5px;
   cursor:pointer;
   font-family: var(--font-primary);

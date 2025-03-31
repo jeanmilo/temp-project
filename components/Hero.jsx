@@ -54,11 +54,11 @@ const Hero = React.memo(function Hero({ textEnter, textLeave }) {
           initial="hidden"
           animate="visible"
           variants={containerVariants}
-          className="max-w-4xl mx-auto w-full p-4 ml-5"
+          className="max-w-4xl w-full p-4 ml-7 mr-7"
         > 
           <motion.h1 
             variants={childVariants}
-            className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4"
+            className="text-xl sm:text-2xl md:text-3xl font-bold mb-4"
           >
             <div 
             onMouseEnter={textEnter}
@@ -79,9 +79,9 @@ const Hero = React.memo(function Hero({ textEnter, textLeave }) {
           
           <motion.h2
             variants={rightChildVariants}
-            className="text-md sm:text-lg md:text-xl text-text-secondary mb-8"
+            className="text-md sm:text-md md:text-lg text-text-secondary mb-8"
           >
-            <div className='text-saccent'>and I love to build things <span className='font-black'>♡</span></div>
+            <div className='text-saccent'>& I love to build things <span className='font-black'>♡</span></div>
           </motion.h2>
 
   {/*         

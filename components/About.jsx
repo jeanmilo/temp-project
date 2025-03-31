@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
-export default function About() {
+export default function About({ textEnter, textLeave }) {
   return (
     <section id="about" className="py-20 bg-secondary/30 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <motion.div
@@ -52,12 +52,15 @@ export default function About() {
             viewport={{ once: true }}
             className="order-1 lg:order-2 flex justify-center"
           >
-            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-lg overflow-hidden border-2 border-accent">
+            <div 
+            onMouseEnter={textEnter}
+            onMouseLeave={textLeave}
+            className="relative w-64 h-64 md:w-80 md:h-80 rounded-[50%] overflow-hidden border-2 border-accent">
               <Image
-                src="/images/profile.jpg"
+                src="/images/philly.jpeg"
                 alt="Profile picture"
                 fill
-                className="object-cover grayscale hover:grayscale-0 transition-all"
+                className="object-cover"
               />
             </div>
           </motion.div>
@@ -66,12 +69,15 @@ export default function About() {
         <br></br>
         <ul className="grid grid-cols-3 gap-5 mt-8 ml-3 mr-4 text-center text-xs sm:text-sm md:text-md items-center">
               {[
+                'HTML',
+                'CSS',
+                'JS',
                 'Python',
-                'C++',
-                'JavaScript',
+                '',
                 'MySQL',
                 'React',
-                'TailwindCSS',
+                'C++',
+                'Tailwind',
               ].map((tech, i) => (
                 <li key={i} className="flex justify-center items-center text-center m-auto">
                   <span className="w-2 h-2 bg-accent rounded-full"></span>

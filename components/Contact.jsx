@@ -102,7 +102,7 @@ export default function Contact({ textEnter, textLeave }) {
               </a>
             </div>
 
-            <div onMouseEnter = {textEnter} onMouseLeave={textLeave} className="inline-flex space-x-4 mt-8 ">
+            <div onMouseEnter = {textEnter} onMouseLeave={textLeave} className="inline-flex space-x-4 mt-8">
               {[
                 {
                   icon: <FiGithub size={24} />,
@@ -122,7 +122,7 @@ export default function Contact({ textEnter, textLeave }) {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[var(--text)]hover:text-accent transition-colors"
+                  className="text-[var(--text)]hover:text-saccent transition-colors"
                 >
                   {social.icon}
                 </a>
